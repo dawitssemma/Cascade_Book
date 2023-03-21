@@ -1,9 +1,9 @@
 # Cascade_Book
 
-Cascade Book API
+**Cascade Book API**
 This is a solution for a REST API built using ASP.NET MVC that manages a collection of books. The API allows for sorting books by publisher, author (last name, first name), and title, as well as adding new entries to the book table.
 
-Data Definition
+**Data Definition**
 The Book class has the following properties:
 •	Publisher (string): the publisher of the book
 •	Title (string): the title of the book
@@ -13,14 +13,14 @@ The Book class has the following properties:
 •	PublicationYear (string): the year the book got published
 •	Edition (string): the edition of the book
 
-Project Structure:
+**Project Structure:**
 The project includes the following components:
 BooksController.cs: contains the implementation of the REST API endpoints.
 Book.cs: defines the Book object with its attributes.
 BookContext.cs: defines the Book database context with its tables.
 DBScripts folder: contains SQL scripts for creating the Book table and stored procedures.
 
-Table Design
+**Table Design**
 The Book data can be stored in a single table with the following fields and datatypes:
 
 Field Name	    Data Type
@@ -31,7 +31,7 @@ AuthorLastName	nvarchar
 AuthorFirstName	nvarchar
 Price	          decimal
 
-API Endpoints
+**API Endpoints**
 The following API endpoints are available:
 
 GET /api/books
@@ -45,14 +45,14 @@ Adds a new book entry to the database using a stored procedure.
 GET /api/books/totalPrice
 Returns the total price of all books in the database.
 
-Stored Procedures
+**Stored Procedures**
 The following stored procedures are used:
 GetBooks
 Returns a sorted list of books by Publisher, Author (last name, first name), then title.
 AddBook
 Adds a new book entry to the database.
 
-Test Data
+**Test Data**
 INSERT INTO Books (Publisher, Title, AuthorLastName, AuthorFirstName, Price)
 VALUES
   ('PublisherA', 'Title1', 'AuthorLastName1', 'AuthorFirstName1', 10.99),
