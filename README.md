@@ -7,17 +7,25 @@ This is a solution for a REST API built using ASP.NET MVC that manages a collect
 **Data Definition**
 
 The Book class has the following properties:
+
 •	Publisher (string): the publisher of the book
+
 •	Title (string): the title of the book
+
 •	AuthorLastName (string): the last name of the author of the book
+
 •	AuthorFirstName (string): the first name of the author of the book
+
 •	Price (decimal): the price of the book
+
 •	PublicationYear (string): the year the book got published
+
 •	Edition (string): the edition of the book
 
 **Project Structure:**
 
 The project includes the following components:
+
 BooksController.cs: contains the implementation of the REST API endpoints.
 Book.cs: defines the Book object with its attributes.
 BookContext.cs: defines the Book database context with its tables.
@@ -38,23 +46,29 @@ Price	          decimal
 
 The following API endpoints are available:
 
-GET /api/books
+**GET /api/books**
 Returns a sorted list of books by Publisher, Author (last name, first name), then title.
-POST /api/books
+
+**POST /api/books**
 Adds a new book entry to the database.
-GET /api/books/ GetBooks_UsingSP
+
+**GET /api/books/ GetBooks_UsingSP**
 Adds a new book entry to the database using a stored procedure.
-GET /api/books/AddBook_UsingSP
+
+**GET /api/books/AddBook_UsingSP**
 Adds a new book entry to the database using a stored procedure.
-GET /api/books/totalPrice
+
+**GET /api/books/totalPrice**
 Returns the total price of all books in the database.
 
 **Stored Procedures**
 
 The following stored procedures are used:
-GetBooks
+
+**GetBooks**
 Returns a sorted list of books by Publisher, Author (last name, first name), then title.
-AddBook
+
+**AddBook**
 Adds a new book entry to the database.
 
 **Test Data**
