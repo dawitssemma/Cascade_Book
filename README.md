@@ -1,9 +1,11 @@
 # Cascade_Book
 
 **Cascade Book API**
+
 This is a solution for a REST API built using ASP.NET MVC that manages a collection of books. The API allows for sorting books by publisher, author (last name, first name), and title, as well as adding new entries to the book table.
 
 **Data Definition**
+
 The Book class has the following properties:
 •	Publisher (string): the publisher of the book
 •	Title (string): the title of the book
