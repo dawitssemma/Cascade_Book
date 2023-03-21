@@ -16,6 +16,7 @@ The Book class has the following properties:
 •	Edition (string): the edition of the book
 
 **Project Structure:**
+
 The project includes the following components:
 BooksController.cs: contains the implementation of the REST API endpoints.
 Book.cs: defines the Book object with its attributes.
@@ -34,6 +35,7 @@ AuthorFirstName	nvarchar
 Price	          decimal
 
 **API Endpoints**
+
 The following API endpoints are available:
 
 GET /api/books
@@ -48,6 +50,7 @@ GET /api/books/totalPrice
 Returns the total price of all books in the database.
 
 **Stored Procedures**
+
 The following stored procedures are used:
 GetBooks
 Returns a sorted list of books by Publisher, Author (last name, first name), then title.
@@ -55,6 +58,7 @@ AddBook
 Adds a new book entry to the database.
 
 **Test Data**
+
 INSERT INTO Books (Publisher, Title, AuthorLastName, AuthorFirstName, Price)
 VALUES
   ('PublisherA', 'Title1', 'AuthorLastName1', 'AuthorFirstName1', 10.99),
